@@ -5,7 +5,7 @@ import java.awt.Toolkit.*;
 import java.util.*;
 import javax.swing.*;
 import java.io.*;
-public class Game extends JFrame implements Runnable
+public class RayCastingFog extends JFrame implements Runnable
 {
     private static final long serialVersionUID = 1L;
     private int width;
@@ -74,7 +74,7 @@ public class Game extends JFrame implements Runnable
     private Camera camera;
     private Screen screen;
 
-    public Game() throws IOException
+    public RayCastingFog() throws IOException
     {
         //set size of screen
         width = 640;
@@ -130,7 +130,7 @@ public class Game extends JFrame implements Runnable
         //setting up the window
         setSize(width, height);
         setResizable(false);
-        setTitle("Game");
+        setTitle("Ray Casting Fog");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.black);
         setLocationRelativeTo(null);
@@ -251,6 +251,6 @@ public class Game extends JFrame implements Runnable
 
     public static void main(String[] args) throws IOException
     {
-        Game g = new Game();
+        RayCastingFog r = new RayCastingFog();
     }
 }
