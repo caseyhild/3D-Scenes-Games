@@ -13,12 +13,12 @@ public class Screen
     private int mapWidth, mapHeight, width, height;
     private ArrayList<Texture> textures;
     private ArrayList<Sprite> sprites = new ArrayList<Sprite>();
-    private ArrayList<Sprite> spritesCopy = new ArrayList<Sprite>();
     private ArrayList<Double> spriteDistance = new ArrayList<Double>();
     private ArrayList<Integer> spriteOrder = new ArrayList<Integer>();
     private double[] ZBuffer;
     private Vector ball;
     private Vector ballDir;
+    private int ballColor;
     private boolean shoot = false;
     private double enemyPosX;
     private double enemyPosY;
@@ -37,6 +37,7 @@ public class Screen
         minimap = new int[mapWidth][mapHeight];
         ball = new Vector(1.5, 1.5);
         ballDir = new Vector(0, 0);
+        ballColor = rgbNum(0, 255, 0);
     }
     
     public int[] updateGame(Camera camera, int[] pixels, int[][] m, int[][] fm, int[][] cm)
@@ -348,7 +349,7 @@ public class Screen
                     {
                         if((pointX * pointX + pointY * pointY + pointZ * pointZ) < colored[drawY * width + drawX])
                         {
-                            pixels[drawY * width + drawX] = p.color;
+                            pixels[drawY * width + drawX] = ballColor;
                             colored[drawY * width + drawX] = (pointX * pointX + pointY * pointY + pointZ * pointZ);
                         }
                     }
