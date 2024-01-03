@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.image.*;
 import java.util.*;
 import javax.swing.*;
-public class Game extends JFrame implements Runnable
+public class RayCastingJumping extends JFrame implements Runnable
 {  
     private static final long serialVersionUID = 1L;
     private int width = 640;
@@ -64,7 +64,7 @@ public class Game extends JFrame implements Runnable
     private Camera camera;
     private Screen screen;
     private Texture t;
-    public Game()
+    public RayCastingJumping()
     {
         //3D Points
 //        FileOutput outFile = new FileOutput("3DPoints.txt");
@@ -136,7 +136,7 @@ public class Game extends JFrame implements Runnable
         //setting up the window
         setSize(width, height);
         setResizable(false);
-        setTitle("Other Game");
+        setTitle("Ray Casting Jumping");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.black);
         setLocationRelativeTo(null);
@@ -247,6 +247,6 @@ public class Game extends JFrame implements Runnable
 
     public static void main(String [] args)
     {
-        Game g = new Game();
+        RayCastingJumping r = new RayCastingJumping();
     }
 }
