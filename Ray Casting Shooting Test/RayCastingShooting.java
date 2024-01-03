@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.image.*;
 import java.util.*;
 import javax.swing.*;
-public class Game extends JFrame implements Runnable
+public class RayCastingShooting extends JFrame implements Runnable
 {  
     private static final long serialVersionUID = 1L;
     private int width = 640;
@@ -42,7 +42,7 @@ public class Game extends JFrame implements Runnable
     private Vector player;
     private Camera camera;
     private Screen screen;
-    public Game()
+    public RayCastingShooting()
     {
         //initial map and location
         camera = new Camera(1.5, 1.5, 1, 0, 0, -0.66, false);//coordinates from topleft of map, facing down
@@ -83,7 +83,7 @@ public class Game extends JFrame implements Runnable
         //setting up the window
         setSize(width, height);
         setResizable(false);
-        setTitle("Game");
+        setTitle("Ray Casting Shooting");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.black);
         setLocationRelativeTo(null);
@@ -254,6 +254,6 @@ public class Game extends JFrame implements Runnable
 
     public static void main(String [] args)
     {
-        Game g = new Game();
+        RayCastingShooting r = new RayCastingShooting();
     }
 }
