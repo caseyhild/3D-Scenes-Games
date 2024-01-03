@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.image.*;
 import java.util.*;
 import javax.swing.*;
-public class Game extends JFrame implements Runnable
+public class RayTracing extends JFrame implements Runnable
 {  
     private static final long serialVersionUID = 1L;
     private int width;
@@ -18,7 +18,7 @@ public class Game extends JFrame implements Runnable
     private Plane floor;
     private Light light;
 
-    public Game()
+    public RayTracing()
     {
         //set size of screen
         width = 600;
@@ -43,7 +43,7 @@ public class Game extends JFrame implements Runnable
         //setting up the window
         setSize(width, height);
         setResizable(false);
-        setTitle("Game");
+        setTitle("Ray Tracing");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.gray);
         setLocationRelativeTo(null);
@@ -136,6 +136,6 @@ public class Game extends JFrame implements Runnable
 
     public static void main(String [] args)
     {
-        Game g = new Game();
+        RayTracing r = new RayTracing();
     }
 }
