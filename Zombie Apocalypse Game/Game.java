@@ -4,7 +4,7 @@ import java.awt.image.*;
 import java.util.*;
 import javax.swing.*;
 import java.io.*;
-public class Game extends JFrame implements Runnable, MouseListener, MouseMotionListener, KeyListener
+public class ZombieApocalypse extends JFrame implements Runnable, MouseListener, MouseMotionListener, KeyListener
 {  
     private static final long serialVersionUID = 1L;
     private int width;
@@ -93,7 +93,7 @@ public class Game extends JFrame implements Runnable, MouseListener, MouseMotion
     private KeyEvent key;
     private KeyEvent oldKey;
 
-    public Game() throws IOException
+    public ZombieApocalypse() throws IOException
     {
         //set size of screen
         width = 640;
@@ -228,7 +228,7 @@ public class Game extends JFrame implements Runnable, MouseListener, MouseMotion
         //setting up the window
         setSize(width, height);
         setResizable(false);
-        setTitle("Game");
+        setTitle("Zombie Apocalypse");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.gray);
         setLocationRelativeTo(null);
@@ -763,6 +763,6 @@ public class Game extends JFrame implements Runnable, MouseListener, MouseMotion
 
     public static void main(String [] args) throws IOException
     {
-        Game g = new Game();
+        ZombieApocalypse z = new ZombieApocalypse();
     }
 }
