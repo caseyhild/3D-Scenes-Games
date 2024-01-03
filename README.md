@@ -7,6 +7,3 @@ I implemented algorithms to perform raytracing, raycasting, and raymarching to g
 
 <img width="400" alt="Screenshot 2024-01-03 at 6 09 13 AM" src="https://github.com/caseyhild/3D-Scenes-Games/assets/44584719/8a892df1-825b-41b5-b6b1-b3f7f13d2b87">
 <img width="400" alt="Screenshot 2024-01-03 at 6 53 39 AM" src="https://github.com/caseyhild/3D-Scenes-Games/assets/44584719/2603f25f-5760-4267-84f8-b24da7a693e8">
-
-<img width="400" alt="Screenshot 2024-01-03 at 6 23 33 AM" src="https://github.com/caseyhild/3D-Scenes-Games/assets/44584719/b2fee023-02ab-45f2-b0c7-8996badd7e12">
-<img width="400" alt="Screenshot 2024-01-03 at 6 37 47 AM" src="https://github.com/caseyhild/3D-Scenes-Games/assets/44584719/f14c2725-df9e-474b-9fd9-3f26ed8598f0">
